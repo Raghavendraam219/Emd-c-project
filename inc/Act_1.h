@@ -13,8 +13,8 @@
 #include "Act_1.h"
 
 //Macro definition 
-#define LED_SET 	(0x01)		//led set
-#define LED_RESET	(0x00)		//led reset
+#define LED_ON 	(0x01)		//led set
+#define LED_OFF	(0x00)		//led reset
 
 #define LED_PORT (PORTB)    
 #define LED_PIN  (PORTB0)   
