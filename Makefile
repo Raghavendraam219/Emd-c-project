@@ -1,10 +1,14 @@
-PROJ_NAME = Blinky
+PROJ_NAME = Activity
 
 BUILD_DIR = Build
 
-# All Source code files
-SRC = project_main.c\
-src/user_utils.c
+# Adding All the four Source code files
+SRC = src/Act_1.c\
+src/Act_2.c\
+src/Act_3.c\
+src/Act_4.c\
+Main.c\
+
 
 # All header file paths
 INC = -I inc
@@ -33,7 +37,7 @@ endif
 
 all:$(BUILD_DIR)
 # Compile the code and generate the ELF file
-	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
+	$(CC) -g -Wall -Os -mmcu=atmega328 -DF_CPU=16000000UL  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
 $(BUILD_DIR):
 # Create directory to store the built files
