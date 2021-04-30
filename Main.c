@@ -8,23 +8,21 @@
  * @copyright Copyright (c) 2021
  * 
  */
-
 #include "Act_1.h"
 #include "Act_2.h"
 #include "Act_3.h"
 #include "Act_4.h"
 #include<avr/io.h>
-
 void peripheral_init(void)
 {
-    /*Configure LED and Switch pins*/
-    LED();
-    /*Configure ADC registers and pins*/
-    Initilize_ADC();
-    /*Configure PWM registers and pins*/
-    Initialize_PWM();
-    /*Configure UART serial communication pin*/
-    Initialize_UART(103);
+    
+    LED(); //Configure LED and Switch pins
+    
+    Initilize_ADC(); //Configure ADC registers and pins
+   
+    Initialize_PWM(); //Configure PWM registers and pins
+    
+    Initialize_UART(103); //Configure UART serial communication pin
 }
     
    
@@ -32,7 +30,6 @@ uint16_t temp;
 char temp_data;
 int main(void)
 {
-    /*uint16_t temp;*/
     // Initialize peripherals
     peripheral_init();
     while(1)
