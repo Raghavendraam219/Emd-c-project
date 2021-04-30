@@ -18,8 +18,8 @@
 
 #define LED_PORT (PORTB)    
 #define LED_PIN  (PORTB0)   
-#define SENSOR_SET !(PIND&(1<<PD0))   // Switch1 SET
-#define HEAT_SET !(PIND&(1<<PD1))     // Switch2 SET
+#define SENSOR_ON !(PIND&(1<<PD0))   // Switch1 SET
+#define HEAT_ON !(PIND&(1<<PD1))     // Switch2 SET
 void state1(uint8_t state);  //led state
 void LED(void);             //Initialize LED
 
