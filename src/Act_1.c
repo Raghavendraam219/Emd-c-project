@@ -11,11 +11,11 @@
 
 void state1(uint8_t state)
 {
-	LED_PORT = (state << LED_PIN);
+    LED_PORT = (state << LED_PIN);
 }
 void LED(void)
 {
-	DDRB = DDRB | (1<<PB0);
+    DDRB = DDRB | (1<<PB0);
     DDRD = DDRD & (~(1<<PD0));
     PORTD = PORTD | (1<<PD0);
     PORTD = PORTD | (1<<PD1);
