@@ -34,9 +34,9 @@ int main(void)
     peripheral_init();
     while(1)
     {
-        if(SENSOR_ON) //If switch_1 is ON
+        if(SENSOR_SET) //If switch_1 is ON
         {
-            if(HEAT_ON) //If switch_2 is ON
+            if(HEAT_SET) //If switch_2 is ON
             {
                 state1(LED_ON);//LED is ON
                 temp=Read_ADC(0);
@@ -45,12 +45,12 @@ int main(void)
             }
             else
             {  
-                state1(LED_OFF);
+                state1(LED_RESET);
             }
         }
         else
         {
-            state1(LED_OFF);//LED is OFF
+            state1(LED_RESET);//LED is OFF
             OCR1A=0;
         }
     }
