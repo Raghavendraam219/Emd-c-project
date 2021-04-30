@@ -1,5 +1,6 @@
 # EMBEDDED PROJECT
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7da09888f3344a6cabeaa2ade941a4ea)](https://app.codacy.com/gh/Raghavendraam219/Emd-c-project?utm_source=github.com&utm_medium=referral&utm_content=Raghavendraam219/Emd-c-project&utm_campaign=Badge_Grade_Settings)
 [![Compile-Linux](https://github.com/Raghavendraam219/Emd-c-project/actions/workflows/Compile.yml/badge.svg)](https://github.com/Raghavendraam219/Emd-c-project/actions/workflows/Compile.yml)
 
 [![Cppcheck](https://github.com/Raghavendraam219/Emd-c-project/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/Raghavendraam219/Emd-c-project/actions/workflows/CodeQuality.yml)
