@@ -45,12 +45,12 @@ int main(void)
             }
             else
             {  
-                state1(LED_ON);
+                state1(LED_OFF);
             }
         }
         else
         {
-            state1(LED_ON);//LED is OFF
+            state1(LED_OFF);//LED is OFF
             OCR1A=0;
         }
     }
