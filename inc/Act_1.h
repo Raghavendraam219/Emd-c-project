@@ -23,4 +23,4 @@
 void state1(uint8_t state);  //led state
 void LED(void);             //Initialize LED
 
-#endif //_ACT_1_H
+#endif //__ACT_1_H_
