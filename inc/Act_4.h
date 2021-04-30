@@ -15,6 +15,6 @@
 
 void Initialize_UART(uint16_t ubrr); //Read characters from UART port
 char UARTread();
-void UART_write(char data);
+void UART_write(char data);     //Write to UART port
 
-#endif
+#endif    //__Act_4_H__
